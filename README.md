@@ -1,12 +1,16 @@
 # Grp
 Git Repository Installer
 
-GRP is a program that allow you to add a installation instruction to your github project and others can simply install your program just using ```bash
+GRP is a program that allow you to add a installation instruction to your github project and others can simply install your program just using
+```bash
 grp install (username/repo)
 ```
 
 ## Installation
-
+first you need ruby
+```bash
+sudo (package manager) install ruby
+```
 ```bash
 gem install grp --user-install
 ```
