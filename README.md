@@ -26,7 +26,7 @@ gem install grp --user-install
 ## Usage
 
 ```bash
-grp help
+grp -h
 ```
 
 ## Contributing
