@@ -1,0 +1,14 @@
+######## GRP ########
+## system("") | the "system" command in Ruby executes the given string as a shell command. It returns true if the command gives zero exit status, false for non zero exit status, and nil if command execution fails.
+## 
+class Grp
+  name = "Project Name"
+  version = "v1.0.0"
+  author = "Your name!"
+  def self::install
+    puts "Welcome to #{name} #{version} installation!"
+    system("")
+  end
+end
+
+Grp::install
