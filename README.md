@@ -6,6 +6,7 @@ GRP is a program that allow you to add a install script to your github project a
 grp install (username/repo)
 ```
 
+See [Tutorial and how to use](https://github.com/southernclaim/grp/wiki)!!
 ## Installation
 first you need ruby
 ```bash
