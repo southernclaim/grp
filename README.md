@@ -3,7 +3,8 @@ Git Repository Installer
 
 GRP is a program that allow you to add a install script to your github project and others can simply install your program just using
 ```bash
-grp install (username/repo)
+grp -i
+(username/repo)
 ```
 
 See [Tutorial and how to use](https://github.com/southernclaim/grp/wiki)!!
