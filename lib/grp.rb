@@ -36,6 +36,12 @@ module Grp
       end
       exit
     end
+
+    def self.newinstall
+      puts "==> Creating a new install.grp in your current directory #{`pwd`.strip}".colorize(:green)
+      system("wget -q https://raw.githubusercontent.com/southernclaim/grp/refs/heads/main/example/install.grp")
+      exit
+    end
   end
   class Error < StandardError; end
   options = {}
@@ -56,13 +62,17 @@ module Grp
       Install::ask_and_download
     end
 
+    opts.on("-n", "--new", "Create a new ./install.grp in your current directory") do
+      Install::newinstall
+    end
+
     opts.separator ""
     opts.separator "You are using GRP!".colorize(:green)
 
   end.parse!
 
   if options[:version]
-    puts "Version 0.1.0"
+    puts "Version 0.1.2"
     exit
   end
 
